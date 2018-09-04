@@ -7,12 +7,12 @@
 <body>
     <form>
         Account:
-        <input name="account" type="text"/><br>
+        <input ID="account" type="text"/><br>
         Password:
-        <input name="password" type="text"/>
+        <input ID="password" type="text"/>
         <input type="button"
                onclick="start()"
-               value="Login"
+               value="Login">
     </form>
     <script>
         //Lấy account, password//
@@ -20,18 +20,15 @@
             let account = document.getElementById("account").value;
             let password = document.getElementById("password").value;
             //tính toán//
-            if (account = "Admin"){
-                if ( password = "TheMaster"){
+            if (account == "Admin"){
+                if ( password == "TheMaster"){
                     alert("Wellcome");
                 }else{
-                    if (account = null){
-                    alert("Canceled");
-                    }else{
-                        alert("Wrong password!!!");
+                    alert("Wrong password!!!");
                     }
                 }
             }else{
-                if(account = null){
+                if(account == ""){
                     alert("Canceled");
                 }else{
                     alert ("I don't know you!!!");
