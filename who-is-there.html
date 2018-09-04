@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>who-is-there</title>
+</head>
+<body>
+    <form>
+        Account:
+        <input name="account" type="text"/><br>
+        Password:
+        <input name="password" type="text"/>
+        <input type="button"
+               onclick="start()"
+               value="Login"
+    </form>
+    <script>
+        //Lấy account, password//
+        function start(){
+            let account = document.getElementById("account").value;
+            let password = document.getElementById("password").value;
+            //tính toán//
+            if (account = "Admin"){
+                if ( password = "TheMaster"){
+                    alert("Wellcome");
+                }else{
+                    if (account = null){
+                    alert("Canceled");
+                    }else{
+                        alert("Wrong password!!!");
+                    }
+                }
+            }else{
+                if(account = null){
+                    alert("Canceled");
+                }else{
+                    alert ("I don't know you!!!");
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
