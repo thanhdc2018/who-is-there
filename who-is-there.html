@@ -6,35 +6,37 @@
 </head>
 <body>
     <form>
-        Account:
-        <input ID="account" type="text"/><br>
-        Password:
-        <input ID="password" type="text"/>
-        <input type="button"
-               onclick="start()"
-               value="Login">
+        <table>
+                <th><tr>Account:<br></tr> </th>
+                <tr><input ID="account" type="text"/><br></tr>
+                <th><tr>Password:<br></tr></th>
+                <tr><input ID="password" type="password"/><br></tr>
+                <tr><input type="button"
+                       onclick="start()"
+                       value="Login"></tr>
+        </table>
     </form>
     <script>
         //Lấy account, password//
         function start(){
-            let account = document.getElementById("account").value;
-            let password = document.getElementById("password").value;
-            //tính toán//
-            if (account == "Admin"){
-                if ( password == "TheMaster"){
-                    alert("Wellcome");
-                }else{
-                    alert("Wrong password!!!");
-                    }
-                }
-            }else{
-                if(account == ""){
-                    alert("Canceled");
-                }else{
-                    alert ("I don't know you!!!");
-                }
-            }
-        }
+                            let account = document.getElementById("account").value;
+                            let password = document.getElementById("password").value;
+                            //tính toán//
+                            if (account == "Admin"){
+                                if ( password == "TheMaster"){
+                                    alert("Wellcome");
+                                }else{
+                                    alert("Wrong password!!!");
+                                    }
+                                }
+                            else{
+                                if(account == ""){
+                                    alert("Canceled");
+                                }else{
+                                    alert ("I don't know you!!!");
+                                }
+                            }
+                        }
 
     </script>
 </body>
